@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -11,7 +11,7 @@ export const Container = styled.div`
     align-items: center;
     `
 
-export const Navlink = styled(Link)`
+export const NavbarLink = styled(NavLink)`
     color: white;
     font-size: 25px;
     font-weight: 900;
@@ -21,7 +21,7 @@ export const Navlink = styled(Link)`
     border-radius: 25px;
     transition: .3s;
     :hover{
-        background-color: white;;
+        background-color: white;
         color: black;
         box-shadow:0px 2px 10px white;
     }

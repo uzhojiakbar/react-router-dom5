@@ -1,13 +1,13 @@
 import React from 'react'
-import { Container, Navlink } from './style'
+import { Container, NavbarLink } from './style'
 
 const Navbar = () => {
   return (
       <Container>
-      <Navlink to={'/Home'}>Home</Navlink>
-      <Navlink to={'/Students'}>Students</Navlink>
-      <Navlink to={'/Teachers'}>Teachers</Navlink>
-      <Navlink to={'/About'}>About</Navlink>
+      <NavbarLink activeStyle={{background:'white',color:'black',boxShadow: '0px 2px 40px white'}} to={'/Home'}>Home</NavbarLink>
+      <NavbarLink activeStyle={{background:'white',color:'black',boxShadow: '0px 2px 40px white'}} to={'/Students'}>Students</NavbarLink>
+      <NavbarLink activeStyle={{background:'white',color:'black',boxShadow: '0px 2px 40px white'}} to={'/Teachers'}>Teachers</NavbarLink>
+      <NavbarLink activeStyle={{background:'white',color:'black',boxShadow: '0px 2px 40px white'}} to={'/About'}>About</NavbarLink>
       </Container>
   )
 }
