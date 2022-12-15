@@ -5,13 +5,16 @@ import Students from '../Components/Students'
 import Teachers from '../Components/Teachers'
 import About from '../Components/About'
 import './style.css'
-import { Route, Switch } from 'react-router-dom'
+import { Redirect, Route, Switch, useLocation } from 'react-router-dom'
 const Root = () => {
+  const location = useLocation()
+  console.log(location);
   return (
     <>
       <Switch>
         <Route exact path={'/'}>
-          <Navbar />
+          <Redirect to={'/Home'}>
+          </Redirect>
         </Route>
         <Route path={'/Home'}>
           <Navbar />
@@ -48,6 +51,7 @@ const Root = () => {
           <h1>404 Page Not Found</h1>
         </Route>
       </Switch>
+      <h1>We Are Here: {location.pathname} </h1>
     </>
   )
 }
