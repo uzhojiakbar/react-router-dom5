@@ -14,7 +14,7 @@ const Root = () => {
           <Navbar />
         </Route>
         <Route path={'/Home'}>
-          <Home />
+          <Navbar />
         </Route>
         <Route path={'/Students'}>
           <Navbar />
